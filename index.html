@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rina Andriani ❤️ Riki Martin</title>
+
+    <!-- fav icon -->
+    <link rel="icon" href="aset/picture/couple-palm-trees-orange-sky-sunset-silhouette-romance-3840x2160-2411.jpg">
+
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- lightbox2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fontawasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="aset/css/style.css">
+</head>
+<body class="overflow-hidden">
+    <!--music-->
+    <audio id="music" src="aset/music/y2mate.at - Nothing s Gonna Change My Love for You (Piano Cover by Riyandi Kusuma) (320 KBps).mp3" loop class="music"></audio>
+
+    <!-- sf door -->
+    <audio src="aset/music/squeaky-door-open-113212.mp3" class="sound-door"></audio>
+
+    <!-- door section -->
+    <div id="door-section" class="open" onclick="mulai()" >
+        <h1 class="heading-door left huruf-sambung">Rina A</h1>
+        <h1 class="heading-door right huruf-sambung">Riki M</h1>
+        <div class="doors">
+            <div class="door left">
+                <img src="aset/picture/left-door.png" alt="left door">
+            </div>
+            <div class="door right">
+                <img src="aset/picture/right-door.png" alt="right door">
+            </div>
+        </div>
+    </div>
+
+    <!-- content section -->
+    <div id="content-section">
+        <!-- navbar -->
+        <ul class="nav">
+            <span class="nav-music"></span>
+            <li>
+                <a href="#acara-section">
+                    <i class="fas fa-fw fa-calendar-day"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#lokasi-section">
+                    <i class="fas fa-fw fa-location-dot"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#love-story-section">
+                    <i class="fas fa-fw fa-heart"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-item-music rotate" id="music-button" onclick="toggleMusic(event)">
+                    <i class="fas fa-fw fa-compact-disc"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#gallery-section">
+                    <i class="fas fa-fw fa-image"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#gift-section">
+                    <i class="fas fa-fw fa-gift"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#rsvp-section">
+                    <i class="fas fa-fw fa-check-to-slot"></i>
+                </a>
+            </li>
+        </ul>
+
+        <!-- hero section -->
+        <section id="hero-section" class="d-flex align-items-center">
+            <img src="aset/4J5P.gif" alt="sparkle" class="sparkle">
+            <div class="container text-center">
+                <h5 class="my-2 text-white">Kepada yth.</h5>
+                <h6 class="my-2 text-white">Bapak/Ibu/Saudara/Saudari</h6>
+                <h2 class="my-2 text-white huruf-sambung">Rina Andriani & Riki Martin</h2>
+                <h5 class="my-2 text-white">Akan segera melangsungkan pernikahan pada tanggal</h5>
+                <h5 class="my-2 text-white fw-bold">Rabu, 3 September 2025</h5>
+                <div class="row my-3 d-flex justify-content-center" id="countdown-wedding">
+                    <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5> Hari</div></div>
+                    <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5> Jam</div></div>
+                    <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5> Menit</div></div>
+                    <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5> Detik</div></div>
+                </div>
+                <a href="#pembuka-section" class="rounded-pill btn btn-lg btn-get-started py-3"><i class="fas fa-fw fa-envelope-open-text"></i>Buka undangan</a>
+            </div>
+        </section>
+
+        <!-- pembuka section -->
+        <section id="pembuka-section" class="pembuka-section section-bg py-5">
+            <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h1 class="text-pink huruf-sambung fw-bold">Assalamu'alaikum</h1>
+                            <h3>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h3>
+                            <p>Wahai manusia, bertakwalah kepada Tuhanmu yang telah menciptakanmu dari diri yang satu (Adam) dan Dia menciptakan darinya pasangannya (Hawa). Dari keduanya Allah memperkembangbiakkan laki-laki dan perempuan yang banyak. Bertakwalah kepada Allah yang dengan nama-Nya kamu saling meminta dan (peliharalah) hubungan kekeluargaan. Sesungguhnya Allah selalu menjaga dan mengawasimu.</p>
+                            <p>(Qs. An-Nisa' (4) : 1)</p>
+                        </div>
+
+                        <div class="row my-4 justify-content-center">
+                            <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                                <img src="aset/picture/IMG_2361.JPEG.jpg" alt="wedding" class="img-fluid rounded-pill">
+                            </div>
+                        </div>
+
+                        <div class="row my-3 justify-content-between">
+                            <div class="col rounded" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                                <div class="p-2 pt-3 text-center">
+                                    <h1 class="text-center huruf-sambung">Rina Andriani</h1>
+                                    <p>Putri ke-dua dari:</p>
+                                    <p>Bpk Juanda & Ibu Patimah</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-1 my-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                <h1 class="text-center huruf-sambung">&</h1>
+                            </div>
+
+                            <div class="col rounded" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                                <div class="p-2 pt-3 text-center">
+                                    <h1 class="text-center huruf-sambung">Riki Martin</h1>
+                                    <p>Putra ke-empat dari:</p>
+                                    <p>Bpk Bedin Muhtadin & Ibu Neng Lelah</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- acara section -->
+        <section id="acara-section" class="acara-section py-5 mb-5">
+            <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title">
+                            <h1 class="text-pink huruf-sambung fw-bold">Acara pernikahan</h1>
+                            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restunya, kami ucapkan terima kasih.</p>
+                        </div>
+                        <div class="row justify-content-between px-3 text-center">
+                            <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                                <h4>Akad Nikah</h4>
+                                <hr>
+                                <p><i class="fas fa-fw fa-calendar-day"></i>Rabu, 3 September 2025</p>
+                                <p><i class="fas fa-fw fa-clock"></i>07:00 WIB - Selesai</p>
+                                <p><i class="fas fa-fw fa-location-dot"></i>Lokasi di Kp Ciledeng</p>
+                                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah+Rina+dan+Riki&details=Akad+Nikah+Rina+Andriani+dan+Riki+Martin&location=Kp+Ciledeng&dates=20250903T000000Z/20250903T030000Z" class="btn btn-lg btn-pink rounded-pill" target="_blank">
+                                    <i class="fas fa-calendar-day"></i> Simpan ke kalender
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                                <h4>Resepsi</h4>
+                                <hr>
+                                <p><i class="fas fa-fw fa-calendar-day"></i>Rabu, 3 September 2025</p>
+                                <p><i class="fas fa-fw fa-clock"></i>09:00 WIB - Selesai</p>
+                                <p><i class="fas fa-fw fa-location-dot"></i>Lokasi di Kp Ciledeng</p>
+                                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Resepsi+Rina+dan+Riki&details=Resepsi+Pernikahan+Rina+Andriani+dan+Riki+Martin&location=Kp+Ciledeng&dates=20250903T020000Z/20250903T060000Z" class="btn btn-lg btn-pink rounded-pill" target="_blank">
+                                    <i class="fas fa-calendar-day"></i> Simpan ke kalender
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lokasi section -->
+        <section id="lokasi-section" class="lokasi-section py-5 section-bg">
+            <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title">
+                            <h1 class="text-pink huruf-sambung fw-bold">Lokasi & Resepsi pernikahan</h1>
+                        </div>
+                        <div class="justify-content-center">
+                            <div class="col-lg-12 text-center">
+                                <a href="https://maps.app.goo.gl/VGMXahgYc2Yp5kW46" target="_blank" class="btn btn-lg btn-pink rounded-pill mb-4"><i class="fas fa-fw fa-location-dot"></i>Buka di google maps</a>
+                                <iframe class="mb-4 mb-lg-0 border-pink" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63372.99737812975!2d107.5256395!3d-6.9130283!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e66a9e40f8cd%3A0xf85c3bc286fb3a55!2sHilton%20Bandung!5e0!3m2!1sid!2sid!4v1745694180606!5m2!1sid!2sid" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery section -->
+        <section id="gallery-section" class="gallery-section py-5 section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h1 class="huruf-sambung text-pink fw-bold">Gallery</h1>
+                </div>
+                <div class="row" data-masonry='{"percentPosition": true}'>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2306.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2306.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2312.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2312.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2323.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2323.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2325.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2325.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2328.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2328.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2331.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2331.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2344.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2344.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2354.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2354.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2360.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2360.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <a href="aset/picture/gallery/IMG_2380.JPEG.jpg" data-lightbox="RinaRiki" class="text-decoration-none">
+                            <img src="aset/picture/gallery/IMG_2380.JPEG.jpg" alt="Rina & Riki" class="card-img border-pink">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gift Section -->
+        <section id="gift-section" class="gift-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title">
+                            <h1 class="huruf-sambung text-pink fw-bold">Wedding Gift</h1>
+                            <p>Bagi Bapak/Ibu/Saudara/i yang ingin mengirimkan hadiah pernikahan dapat melalui virtual account atau e-wallet di bawah ini.</p>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 text-center">
+                                <button type="button" class="text-center btn btn-lg btn-pink mb-4 rounded-pill" data-bs-toggle="collapse" data-bs-target="#collapseHadiah"><i class="fas fa-fw fa-gift"></i> Kirim Hadiah</button>
+                                <div class="collapse" id="collapseHadiah">
+                                    <div class="my-4 mx-auto position-relative credit-card">
+                                        <img src="aset/picture/card/BRI.png" alt="Logo BRI" class="card-logo">
+                                        <div class="card-container">
+                                            <img src="aset/picture/card/sim.png" alt="sim" class="card-sim">
+                                            <div class="card-number">702401027187539</div>
+                                        </div>
+                                        <div class="card-name mt-2">Riki Martin</div>
+                                        <a style="cursor: pointer;" onclick="copyText(this)" class="copy-button btn btn-light mt-3">
+                                            <i class="fas fa-fw fa-copy"></i>
+                                            Copy
+                                        </a>
+                                    </div>
+
+                                    <div class="my-4 mx-auto position-relative credit-card">
+                                        <img src="aset/picture/card/DANA.png" alt="Logo DANA" class="card-logo">
+                                        <div class="card-container">
+                                            <img src="aset/picture/card/sim.png" alt="sim" class="card-sim">
+                                            <div class="card-number">085864551011</div>
+                                        </div>
+                                        <div class="card-name mt-2">Rina Andriani</div>
+                                        <a style="cursor: pointer;" onclick="copyText(this)" class="copy-button btn btn-light mt-3">
+                                            <i class="fas fa-fw fa-copy"></i>
+                                            copy
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP section -->
+        <section id="rsvp-section" class="rsvp-section section-bg py5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h1 class="text-pink huruf-sambung fw-bold">RSVP</h1>
+                            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran anda.</p>
+                        </div>
+                        <form action="https://script.google.com/macros/s/AKfycby3xOc7NxcptQCk5wIUJRwuWGJo-5dZqsjP9nTPJZAuCx8oPYxf5tOAK_hK8njycYhq/exec" method="POST" id="rsvp-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="nama">Nama</label>
+                                    <input type="text" id="nama" name="nama" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="jumlah">Jumlah</label>
+                                    <input type="number" id="jumlah" name="jumlah" class="form-control" required min="1" max="5" length="1" value="1">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="status">Status</label>
+                                    <select name="status" id="status" class="form-select" required>
+                                        <option value="0">--- Pilih salah satu ---</option>
+                                        <option value="Hadir">Hadir</option>
+                                        <option value="Tidak-Hadir">Tidak hadir</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="mt-3">
+                                    <button type="submit" class="btn btn-kirim"><i class="fas fa-fw fa-paper-plane"></i> Kirim</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row mt-5">
+                            <div class="col-lg-12">
+                                <div id="disqus_thread"></div>
+                                <script>
+                                    /**
+                                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                                    /*
+                                    var disqus_config = function () {
+                                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                    };
+                                    */
+                                    (function() { // DON'T EDIT BELOW THIS LINE
+                                    var d = document, s = d.createElement('script');
+                                    s.src = 'https://wedding-rina-andriani.disqus.com/embed.js';
+                                    s.setAttribute('data-timestamp', +new Date());
+                                    (d.head || d.body).appendChild(s);
+                                    })();
+                                </script>
+                                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Penutup section -->
+        <section id="penutup-section" class="penutup-section py-5">
+            <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h1 class="text-pink huruf-sambung fw-bold">Wassalamu'alaikum</h1>
+                            <p>Merupakan suatu kebahagiaan dan kehormatan bagi kami, apa bila Bapak/Ibu/Saudara/i memberikan do'a restu kepada kami.</p>
+                            <h5 class="my-3">KAMI YANG BERBAHAGIA</h5>
+                            <h1 class="huruf-sambung">Rina Andriani & Riki Martin</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer-->
+        <footer id="footer" class="mb-5 pb-5">
+            <div class="container py-5 text-center position-relative">
+                <div class="row">
+                    <div class="col-12 my-3">
+                        <a href="#" class="text-pink"><i class="fas fa-fw fa-arrow-up"></i> Back to top</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- jquery3 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- boostrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- lightbox2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js" integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.19.1/dist/sweetalert2.all.min.js"></script>
+    <!-- masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- js -->
+    <script src="aset/js/script.js"></script>
+    <!-- Disqus -->
+    <script id="dsq-count-scr" src="//wedding-rina-andriani.disqus.com/count.js" async></script>
+</body>
+</html>
