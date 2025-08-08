@@ -201,6 +201,7 @@ body.transition {
 
 #hero-section .container {
     position: relative;
+    height: 90%;
 }
 
 #hero-section .btn-get-started {
